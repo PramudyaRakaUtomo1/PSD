@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Webstatik Contoh dengan Foto</title>
   <style>
     :root{
       --sidebar: #b6b6b6;
@@ -10,7 +11,6 @@
       --content: #ffffff;
       --codeBg: #ffffff;
       --codeLine: #2d2d2d;
-      --accent: #4caf50;
     }
 
     * { box-sizing: border-box; }
@@ -65,6 +65,11 @@
       color: #000000;
       margin-bottom: 14px;
     }
+
+    div{
+      display: flex;
+      justify-content: right;
+    }
   </style>
 </head>
 <body>
@@ -73,20 +78,22 @@
     <aside class="sidebar" aria-label="Menu utama">
       <img src="aku.jpg" width="200px" height="200px" />
       <ul class="menu">
-        <li><a href="profile.html">Profile</a></li>
+        <i class="search-box">
+          <input type="text" placeholder="Search..."/>
+        </i>
+        <a href="profile.html"></a>
         <li><a href="#">Statistik Dasar</a></li>
         <li><a href="#">Cleaning & Preprocessing</a></li>
         <li><a href="#">Model & Features</a></li>
         <li><a href="#">Contoh</a></li>
         <li><a href="#">Summary</a></li>
-        
       </ul>
     </aside>
 
     <!-- Konten utama -->
     <main class="content" role="main">
       <div><a href="https://github.com/PramudyaRakaUtomo1/PSD"><img src="github_PNG40.png" width="50px" height="50px" /></a></div>
-      <div class="title">Profile</div>
+      <h1>Profile</h1>
       <p>Nama : Pramudya Raka Utomo</p>
       <p>Nim : 210411100058</p>
       <p>Email : mercurymeatgt@gmail.com</p>
