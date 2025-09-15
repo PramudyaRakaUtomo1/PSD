@@ -95,11 +95,13 @@
     <main class="content" role="main">
       <div><a href="https://github.com/PramudyaRakaUtomo1/PSD"><img src="github_PNG40.png" width="50px" height="50px" /></a></div>
       <h1>Data Understanding</h1>
-      <p></p>
+      <p>Dataset berisi 150 sampel dengan 4 fitur numerik (sepal_length, sepal_width, petal_length, petal_width) dan 1 label Class. Tidak ditemukan missing value atau duplikasi; tiap kelas terdistribusi seimbang (50 sampel per kelas).
+Eksplorasi data: Statistik dasar menunjukkan petal_length dan petal_width memiliki perbedaan rata-rata yang jelas antar kelas (mis. rata-rata petal_length: Setosa≈1.46, Versicolor≈4.26, Virginica≈5.55). Korelasi antara petal_length dan petal_width sangat tinggi (≈0.96), menunjukkan keduanya sangat informatif untuk klasifikasi. Berdasarkan EDA, rekomendasi awal adalah menggunakan seluruh fitur (buang id), melakukan stratified train/test split, dan memulai model dengan Random Forest sebagai baseline kuat.</p>
       </section>
 
       
     </main>
   </div>
 </body>
+
 </html>
