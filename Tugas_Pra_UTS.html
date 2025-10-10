@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <style>
+    :root{
+      --sidebar: #b6b6b6;
+      --sidebarText: #000000;
+      --content: #ffffff;
+      --codeBg: #ffffff;
+      --codeLine: #2d2d2d;
+      --accent: #4caf50;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; margin: 0; font-family: Arial, Helvetica, sans-serif; background: linear-gradient(#d9f0ff, #e8ffe6); }
+
+    /* Layout umum */
+    .container {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      min-height: 100vh;
+    }
+
+    /* Sidebar kiri */
+    .sidebar {
+      background: var(--sidebar);
+      color: var(--sidebarText);
+      padding: 20px;
+    }
+    .brand {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 10px;
+    }
+    .menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    .menu li {
+      padding: 8px 6px;
+      border-radius: 4px;
+    }
+    .menu li + li { margin-top: 6px; }
+    .menu a {
+      color: #000000;
+      text-decoration: none;
+      display: block;
+    }
+    .menu a:hover {
+      background: #ffffff;
+    }
+
+    /* Panel konten utama */
+    .content {
+      padding: 20px;
+      background: var(--content);
+    }
+
+    .title {
+      font-size: 28px;
+      font-weight: 600;
+      color: #000000;
+      margin-bottom: 14px;
+    }
+
+    div{
+      display: flex;
+      justify-content: right;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <!-- Sidebar kiri -->
+    <aside class="sidebar" aria-label="Menu utama">
+      <img src="aku.jpg" width="200px" height="200px" />
+      <ul class="menu">
+        <i class="search-box">
+          <input type="text" placeholder="Search..."/>
+        </i>
+        <li><a href="profile.html">Profile</a></li>
+        <li><a href="index.html">Buisnesse Understanding</a></li>
+        <li><a href="Data_understanding.html">Data Understanding</a></li>
+        <li><a href="Data_preprocessing.html"></a>Data Preprocessing</li>
+        <li><a href="Tugas_Pra_UTS.html">Tugas Pra UTS</a></li>
+        <li><a href="#"></a></li>
+        
+      </ul>
+    </aside>
+
+    <!-- Konten utama -->
+    <main class="content" role="main">
+      <div><a href="https://github.com/PramudyaRakaUtomo1/PSD"><img src="github_PNG40.png" width="50px" height="50px" /></a></div>
+      <h1>Tugas Pra UTS</h1>
+      <ul>
+        <li><b>Import Dataset Ecoli</b></li>
+        <p>Import dataset ke dalam postgre</p>
+        <img src="Screenshot 2025-10-10 133931.png" width="900px" height="500px" />
+        <img src="Screenshot 2025-10-10 152329.png" width="900px" height="500px" />
+      </ul>
+
+      <ul>
+        <li><b>Membuat Project Pra UTS di Knime</b></li>
+        <p>disini diberi nama Project Pra UTS </p>
+        <img src="Screenshot 2025-10-10 134144.png" width="900px" height="500px" />
+        <img src="Screenshot 2025-10-10 134250.png" width="900px" height="500px" />
+      </ul>
+      </section>
+
+      <ul>
+        <li><b>Menyambungkan postgre dengan Knime</b></li>
+        <p>pilih node 'postgreSQL Connector'</p>
+        <img src="Screenshot 2025-10-10 134835.png" width="900px" height="500px" />
+        <p>Kemudian isi hostname dan nama database yang ingin digunakan</p>
+        <img src="Screenshot 2025-10-10 135133.png" width="900px" height="500px" />
+      </ul>
+
+      <ul>
+        <li><b>Memilih table yang ingin digunakan</b></li>
+        <p>pilih node 'DB Table Selector' dan pilih table mana yang digunakan</p>
+        <img src="Screenshot 2025-10-10 135451.png" width="900px" height="500px" />
+        <li><b>Menampilkan tabel yang telah digunakan</b></li>
+        <p>untuk menampilkan tabel bisa menggunakan node 'DB Reader'</p>
+        <img src="Screenshot 2025-10-10 135605.png" width="900px" height="500px" />
+        <img src="Screenshot 2025-10-10 140223.png" width="900px" height="500px" />
+      </ul>
+      
+      <ul>
+        <li><b>Unbalancing dataset</b></li>
+        <p>menggunakan node 'Value Counter'</p>
+        <img src="Screenshot 2025-10-10 150416.png" width="900px" height="500px" />
+      </ul>
+      
+    <ul>
+        <li><b>Mencari missing values</b></li>
+        <p>pilih node 'Missing values'</p>
+        <img src="Screenshot 2025-10-10 144750.png" width="900px" height="500px" />
+        <li><b>Deteksi outlier</b></li>
+        <p>Untuk mendeteksi outlier disini menggunakan node 'Numeric outlier'</p>
+        <img src="Screenshot 2025-10-10 144806.png" width="900px" height="500px" />
+        <img src="Screenshot 2025-10-10 144818.png" width="900px" height="500px" />
+        <img src="Screenshot 2025-10-10 155028.png" width="900px" height="500px" />
+    </ul>
+
+      </section>
+      
+    </main>
+  </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
